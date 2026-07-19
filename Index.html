@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feliz 15 Alexa!</title>
+<style>
+  body { margin:0; background:#ffd6e0; font-family: Arial, sans-serif; text-align:center; }
+  header { padding:20px; background:#ffc2d1; }
+  header img { width:360px; max-width:90%; border-radius:20px; border:4px solid white; }
+  h1 { color:#d14a6b; }
+  .texto, .texto-final { max-width:680px; margin:20px auto; background:white; border-radius:20px; padding:20px; border:3px solid #ff8fab; line-height:1.5; }
+  .galeria { max-width:550px; margin:0 auto; padding:10px; }
+  .foto-box { background:white; border-radius:20px; padding:10px; margin-bottom:35px; border:6px solid #ff8fab; }
+  .foto-box img { width:100%; height:auto; border-radius:15px; display:block; }
+  .corazones { font-size:20px; padding:5px 0; }
+  .btn-musica { background:#ff4d6d; color:white; border:none; padding:16px 35px; font-size:20px; border-radius:30px; cursor:pointer; }
+</style>
+</head>
+<body>
+
+<header>
+  <img src="kitty.jpg">
+  <h1>FELIZ CUMPLEAÑOS #15 ALEXA!</h1>
+</header>
+
+<div class="texto">
+  Feliz cumpleaños #15. Muchas felicidades bro. Que cumplas todos tus sueños y metas que te propongas.<br><br>
+  Pasala de lo mejor hoy en tu día. Espero lo disfrutes al máximo. Te deseo lo mejor de lo mejor bro. Muchas felicidades te quiero mucho. 💕<br><br>
+  Te hice este dibujo espero te guste mucho. Salió feo pero hice lo que pude. 🩷<br><br>
+  Estás fotos son de una cumpleañera que es muy bonita y tierna. 💗
+</div>
+
+<h2 style="color:#d14a6b;">Fotos de la cumpleañera más bonita 💕</h2>
+
+<div class="galeria">
+  <div class="foto-box"><div class="corazones">💗 💖 💗 💖 💗</div><img src="foto1.jpg"><div class="corazones">💗 💖 💗</div></div>
+  <div class="foto-box"><div class="corazones">💗 💖 💗</div><img src="foto2.jpg"><div class="corazones">💗 💖 💗</div></div>
+  <div class="foto-box"><div class="corazones">💗 💖 💗</div><img src="foto3.jpg"><div class="corazones">💗 💖 💗</div></div>
+  <div class="foto-box"><div class="corazones">💗 💖 💗</div><img src="foto4.jpg"><div class="corazones">💗 💖 💗</div></div>
+  <div class="foto-box"><div class="corazones">💗 💖 💗</div><img src="foto5.jpg"><div class="corazones">💗 💖 💗</div></div>
+  <div class="foto-box"><div class="corazones">💗 💖 💗</div><img src="foto6.jpg"><div class="corazones">💗 💖 💗</div></div>
+  <div class="foto-box"><div class="corazones">💗 💖 💗</div><img src="foto7.jpg"><div class="corazones">💗 💖 💗</div></div>
+</div>
+
+<div class="texto-final">
+Eres una niña muy linda, inteligente, trabajadora, adorable, amable, maravillosa, gentil y muy hermosa.<br><br>
+Quería decirte que no dudes de ti misma. Tu eres una niña muy linda. Tienes unos ojos muy bonitos todo en ti es bonito.<br><br>
+Eres una niña muy bonita y tierna.<br><br>
+Hoy es un día muy especial para mí porque hoy cumple años una niña que es muy especial para mí y ella es muy bella.<br><br>
+Está es la fecha en la que recuerdo todos los momentos felices que tuvimos juntos. Las fotos y recuerdos quedaran de recuerdo en mi corazón por ser tan linda conmigo.<br><br>
+Muchas felicidades.<br>Felices 15 años<br>Que sigas cumpliendo muchísimos años más, te deseo lo mejor.<br><br>
+Tu eres una niña muy especial para mí. Desde que te conocí fuiste una gran amiga. Eres muy amable, atenta, maravillosa y muy hermosa por cierto.<br><br>
+Muchas felicidades. Te quiere tu amigo: L.TimmyX! 💕
+</div>
+
+<h2 style="color:#d14a6b; margin-top:30px;">Escucha 💕</h2>
+
+<audio id="miAudio" src="amor.mp3"></audio>
+
+<button class="btn-musica" onclick="reproducir()">Reproducir 🩷 </button>
+<p id="estado" style="font-size:14px; color:#d14a6b;"></p>
+
+<script>
+function reproducir() {
+  var audio = document.getElementById('miAudio');
+  // 26 segundos es donde empieza "Mami eres lo que quiero"
+  audio.currentTime = 26; 
+  audio.play();
+  document.getElementById('estado').innerText = 'Reproduciendo: Mami eres lo que quiero... 💕';
+}
+</script>
+
+</body>
+</html>
